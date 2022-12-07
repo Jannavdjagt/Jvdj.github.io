@@ -2,7 +2,7 @@
 
 body{
 /* CSS GOES HERE */
-background-color: rgb(58, 115, 115);
+background-color: rgb(18, 96, 101);
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 letter-spacing: 2px;
@@ -17,8 +17,36 @@ h1{
         /* width: 50%;
         border: 5px solid rgb(193, 193, 193);
         padding: 10px; */
-    padding-top: 20px;
+    padding: 30px;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Trebuchet MS;
+   }
+    
+   .menu {
+    /* margin: 20px; */
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+   }
+    
+   .menu ul li {
+    display: inline;
+    padding: 10px 30px;
+   }
+    
+   .menu ul li a, a:link, a:visited, a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   }
+    
+   .menu ul li a:hover {
+    color: rgb(8, 54, 102);
+    /* text-decoration: underline; */
+   }
 p{
     width: 40%;
     /* margin: 0 auto; */
@@ -29,26 +57,28 @@ img{
     margin: 0 auto;
 /* deze dingen werken altijd samen om het de centeren op je pagina */
 }
-a{
-    color:rgb(183, 169, 113);
+.Onderkant{
+    text-align: center;
+    margin: auto;
+}
+.Onderkant a{
+    color:rgb(188, 156, 28);
     text-decoration: none;
     /* dit is de basic */
 } 
-a:link, a:visited{
+.Onderkant a:link, a:visited{
 color: aqua;
 
 }
-a:hover, a:active{
+.Onderkant a:hover, a:active{
     color: white;
     background-color: blue;
 
 }
 .party{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
-.Onderkant{
-    /* text-align: center; */
-}
+
 .paragraph{
     padding-left: 30px;
 }
@@ -56,50 +86,9 @@ a:hover, a:active{
 .container{
     display:flex;
     flex-direction: row;
-    /* margin: 0 auto; */
+    margin: 20px;
+
     padding-left: 20%;
-    
-    
+    /* background-color: rgb(72, 198, 207); */
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #ce5307;}
